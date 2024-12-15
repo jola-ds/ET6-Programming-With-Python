@@ -7,4 +7,13 @@ It will return true if the item is in _only one_ of the lists.
 
 
 def exclusive_or():
-    pass
+    
+    text = word
+    lst1 = []
+    lst2 = []
+    if text in lst1 or list2
+    else:
+    print("Text not found.")
+    return text
+
+pass
