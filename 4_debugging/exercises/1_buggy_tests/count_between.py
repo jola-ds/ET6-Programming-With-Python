@@ -28,11 +28,11 @@ def count_between(numbers: list, lower: int, upper: int) -> int:
         AssertionError: if numbers is not a list or bounds aren't integers
     
     Examples:
-        >>> count_between([1, 2, 3, 4, 5], 2, 4)
+    >>> count_between([1, 2, 3, 4, 5], 2, 4)
         3
-        >>> count_between([1.5, 2.5, 3.5], 2, 3)
+     >>> count_between([1.5, 2.5, 3.5], 2, 3)
         1
-        >>> count_between([], 0, 10)
+    >>> count_between([], 0, 10)
         0
     """
     assert isinstance(numbers, list), "first argument must be a list"

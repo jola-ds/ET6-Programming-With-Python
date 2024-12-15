@@ -26,11 +26,11 @@ class TestCountVowels(unittest.TestCase):
         
     def test_no_vowels(self):
         """It should return 0 for strings without vowels"""
-        self.assertEqual(count_vowels("cry"), 1)
+        self.assertEqual(count_vowels("cry"), 0)
         
     def test_all_vowels(self):
         """It should count all vowels in a string"""
-        self.assertEqual(count_vowels("AUDIO"), 0)
+        self.assertEqual(count_vowels("AUDIO"), 4)
         
     def test_mixed_case(self):
         """It should handle mixed case strings"""

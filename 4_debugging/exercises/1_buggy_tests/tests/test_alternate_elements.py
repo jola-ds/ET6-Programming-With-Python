@@ -23,15 +23,15 @@ class TestAlternateElements(unittest.TestCase):
     # Standard test cases
     def test_five_numbers(self):
         """It should return every other number from a list of five"""
-        self.assertEqual(alternate_elements([1, 2, 3, 4, 5]), [2, 4])
+        self.assertEqual(alternate_elements([1, 2, 3, 4, 5]), [1, 3, 5])
     
     def test_four_numbers(self):
         """It should return every other number from a list of four"""
         self.assertEqual(alternate_elements([1, 2, 3, 4]), [1, 3])
     
     def test_strings(self):
-        """It should work with strings"""
-        self.assertEqual(alternate_elements(['a', 'b', 'c', 'd']), 'ac')
+        """It should return every other string from a list"""
+        self.assertEqual(alternate_elements(['a', 'b', 'c', 'd']), ['a', 'c'])
     
     # Edge cases
     def test_empty_list(self):
@@ -40,7 +40,7 @@ class TestAlternateElements(unittest.TestCase):
     
     def test_single_element(self):
         """It should return single element list for single element input"""
-        self.assertEqual(alternate_elements([1]), [])
+        self.assertEqual(alternate_elements([1]), [1])
     
     def test_two_elements(self):
         """It should return first element for two element input"""
@@ -54,7 +54,7 @@ class TestAlternateElements(unittest.TestCase):
     
     def test_string_input(self):
         """It should raise AssertionError for string input"""
-        self.assertEqual(alternate_elements("hello"), ["h", "l", "o"])
-
+        with self.assertRaises(AssertionError):
+            alternate_elements("hello")
 if __name__ == '__main__':
     unittest.main()
