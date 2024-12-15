@@ -29,6 +29,11 @@ _08_or_ff = False or False  # False
 _09_not_t = not True    # False
 _10_not_f = not True    # False
 
+<<<<<<< HEAD
+=======
+_09_not_t = not True
+_10_not_f = not False
+>>>>>>> origin/main
 
 # --- Number Operators ---
 
