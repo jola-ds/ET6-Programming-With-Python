@@ -15,16 +15,20 @@ prompt_2 = '-> Do you want to save your input? \n \
 
 # -- if statements conditionally execute one block of code based on one expression --
 
+# response = Y
 response = input(prompt_1)
 if response == "Y":
+# saved_1 = Y
     saved_1 = response
 
 
 # -- if/else statements conditionally execute two blocks of based on one expression --
 
+# response = Zipper
 response = input(prompt_1)
 if response == "Y":
     saved_2 = response
+# saved_2 = [[redacted]]
 else:
     saved_2 = "[[ redacted ]]"
 
@@ -32,20 +36,23 @@ else:
 # -- if/elif/else statements execute blocks of code based on multiple expressions --
 #      the else block is executed by default if no expression if no condition is met
 
+# response = Yuck
 response = input(prompt_2)
 if response == "Y":
     saved_3 = response
 elif response == "N":
     saved_3 = "[[ redacted ]]"
+# saved _3 = received an unrecognised command
 else:
     saved_3 = "received an unrecognized command"
 
 
 # you can use if/elif without else when you do not want a default behavior
-
+# response = Y
 response = input(prompt_2)
 if response == "Y":
     saved_4 = response
+# saved_4 = Y
 elif response == "N":
     saved_4 = "[[ redacted ]]"
 

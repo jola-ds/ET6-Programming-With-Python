@@ -32,15 +32,16 @@ a_boolean = False
 # --- isinstance() : test the type of a value ---
 
 # passing
-pass_check_string = isinstance(a_string, str)
-pass_check_integer = isinstance(an_integer, int)
-pass_check_float = isinstance(a_float, float)
-pass_check_boolean = isinstance(a_boolean, bool)
+pass_check_string = isinstance("word", str)
+pass_check_integer = isinstance(564, int)
+pass_check_float = isinstance(0.0034, float)
+pass_check_boolean = isinstance(False, bool)
+pass_check_boolean = isinstance(True, int) # bool is a subclass of int
 
 # failing
-fail_check_string = isinstance(a_string, bool)
-fail_check_integer = isinstance(an_integer, float)
-fail_check_float = isinstance(a_float, str)
-fail_check_boolean = isinstance(a_boolean, int)
+fail_check_string = isinstance("word", bool)
+fail_check_integer = isinstance(28, float)
+fail_check_float = isinstance(2.3, str)
+
 
 print("end of script")

@@ -16,18 +16,29 @@ Together, comparing and asserting are a good way to test your understanding.
 
 # Check if two values are the same using ==
 
+# True
 equality = 1 == 1.0
+# True
 equality = 1 == 1
+# False
 equality = 1 == "1"
+# False
 equality = True == "True"
+# False
 equality = "dog" == "Dog"
 
 # Check if two values are not the same using !=
 
+# False
 difference = 1 != 1.0
+# False
 difference = 1 != 1
+# True
 difference = 1 != "1"
+# True
 difference = True != "True"
+#True
+# differense is True
 difference = "dog" != "Dog"
 
 # --- Asserting ---
@@ -41,14 +52,17 @@ assert 1 == 1.0
 assert equality is False
 assert difference is True
 
+# passing
 assert isinstance(equality, bool)
 assert isinstance(difference, bool)
+
 
 # failing assertions
 #   uncomment any of the following lines to throw an assertion error
 #   a failed assertion will stop the program, no further lines will execute
 
-# assert 1 != 1
+# throws assertion error
+assert 1 != 1
 # assert 1 != 1.0
 # assert False
 # assert difference == "difference"

@@ -15,14 +15,22 @@ Python Tutor visualizes this more clearly than the VSCode debugger *
 
 letters = ["a", "b"]
 
+# letters = ["a", "b", "c"]
 letters.append("c")
 
+# letters_reference = ["a", "b", "c"]
 letters_reference = letters
 
+# letters_reference = ["a", "b", "c"]
+# letters = ["a", "b", "c", "d"]
 letters_reference.append("d")
 
+# letters_copy = ["a", "b", "c", "d"]
 letters_copy = letters.copy()
 
+# letters_reference = ["a", "b", "c"]
+# letters = ["a", "b", "c", "d"]
+# letters_copy = ["a", "b", "c", "d", "e"]
 letters_copy.append("e")
 
 print("end of script")

@@ -19,22 +19,35 @@ You will know you have understood this file when you can:
 """
 
 # you create a new variable by assign a value to it
+# this line executes and assigns "D'athaniel" to the variable name
 name = "D'athaniel"
 
+
 # you can assign a new value to a variable with the same syntax
+# this changes the value of name to "Mittens"
 name = "Mittens"
 
 
 # variables can also be assigned the value stored in another variable
 # notice!  Variables only store one value at a time, the most recent one
+# this assigns the vale of the variable name to a new variable hand_thing
+# name remains unchanged
+# hand_thing stores "Mittens"
 hand_thing = name
 
 # reassigning the new variable does not change the value stored in the other
+# hand_thing now stores a new value "glove"
 hand_thing = "glove"
+
 # and vice-versa
+# name now stores "Poalia"
+# hand_thing remains unchanged
 name = "Poalia"
 
 # using a variable without first assigning a value will throw an error
+# this line would throw 'undefined variable' error
+# no value assigned to toadstool
 toadstool
 
+# this would execute and print the message
 print("end of script")
