@@ -12,9 +12,9 @@ A program that uses the function to reverse a user's input.
 
 def reverse_string(text: str) -> str:
     """Creates a reversed copy of a string"""
-    backwards = ""
-    for char in text:
-        backwards = char + backwards
+    backwards = ""  # initialise backwards with empty string to store reversed text
+    for char in text:   # iterate over every character in text
+        backwards = char + backwards  # add each character to the front of backwards
     return backwards
 
 
@@ -22,12 +22,12 @@ def reverse_string(text: str) -> str:
 
 print("This program prints your input in reverse.\n")
 
-user_text = ""
-while user_text == "":
-    user_text = input("\nEnter some something to reverse: ")
-    if user_text == "":
-        print("Nope, gotta enter something.  Try again.")
+user_text = ""  # store '' in user_text
+while user_text == "":  # prompt until user enters text
+    user_text = input("\nEnter some something to reverse: ")    # store user input in user_text
+    if user_text == "": # check if user entered nothing and prompt user to enter text
+        print("Nope, gotta enter something.  Try again.")  
 
-reversed_text = reverse_string(user_text)
+reversed_text = reverse_string(user_text)   # store reversed text in reversed_text
 
 print(user_text, " -> ", reversed_text)

@@ -11,27 +11,29 @@ A program that uses the function to reverse a user's list.
 
 
 def reverse_list(items: list) -> list:
-    """Creates a reversed copy of a list"""
-    backwards = []
-    for item in items:
-        backwards.insert(0, item)
-    return backwards
+    
+    
+	"""Creates a reversed copy of a list"""
+	backwards = []
+	for item in items:  # iterate over each ittem
+		backwards.insert(0, item) # add each item to the beginning of backwards
+	return backwards
 
 
 # --- use the helper function in a program ---
 
 print("This program prints your saved items in reverse order.\n")
 
-items = []
+items = []  # initialise items with empty list
 
-next_item = None
-while next_item != "":
-    print("\nSaved items: ", items)
-    next_item = input(
-        "Enter some text to add to the list, or enter nothing to finish: "
-    )
-    if next_item != "":
-        items.append(next_item)
+next_item = None   
+while next_item != "": # add as many items as you want
+	print("\nSaved items: ", items)
+
+	# prompt user to enter input
+	next_item = input("Enter some text to add to the list, or enter nothing to finish: ")
+	if next_item != "":
+		items.append(next_item) # add user input to items
 
 reversed_items = reverse_list(items)
 
