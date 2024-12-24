@@ -33,6 +33,7 @@ def check_less(a: int, b: int) -> int:
     """
     # Both arguments must be integers
     assert isinstance(a, int) and isinstance(b, int), "Argument is not an integer"
+    # Arguments should not be zero
     assert not (a == 0 and b == 0), "Both arguments cannot be zero"
 
     if a < b:
