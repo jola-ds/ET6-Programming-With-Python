@@ -12,7 +12,7 @@ Created on 2024-12-08
 """
 
 
-def check_length(a):
+def check_length(a) -> int:
 
     """
     Checks the length of the input iterable and returns None if the input is empty.
@@ -26,7 +26,7 @@ def check_length(a):
     Raises:
         AssertionError: if input is not a string, list or tuple
         
-  
+
     >>> check_length(()) is None
     True
     >>> check_length(("")) is None
@@ -44,3 +44,7 @@ def check_length(a):
         return None
 
     return len(a)
+
+print(check_length([0, 1]))
+print(check_length([[1, 2], [3, 4]]))
+print(check_length([]))
