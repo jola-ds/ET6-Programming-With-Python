@@ -1,12 +1,19 @@
 """
-This module contains a function for performing the basic addition operation.
+This module contains unit tests to validate the functionality of the `sum_two_numbers` function.
+It performs basic addition for two numbers and supports integer and float inputs.
 
-Module Contents:
-    - sum_two_numbers(a, b): Returns the sum of two integers.
+Test categories:
+    - Standard cases: Typical addition of positive and negative integers and floats.
+    - Edge cases: Zero values, negative numbers, and mixed types.
+    - Defensive tests: Invalid inputs and assertion checks.
+
+Created on: 2024-12-08
+Author: Jola-Moses
 """
 
+
 import unittest
-from..sum_two_numbers import sum_two_numbers  
+from..sum_two_numbers import sum_two_numbers
 
 class TestSumTwoNumbers(unittest.TestCase):
     """Test the sum_two_numbers function."""
