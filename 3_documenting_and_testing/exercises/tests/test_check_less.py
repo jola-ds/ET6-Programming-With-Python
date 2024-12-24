@@ -1,16 +1,23 @@
 """
-A module for checking if an integer is less than another, or the sum of two integers.
+This module contains unit tests to validate the functionality of the `check_less` function.
+It determines the smaller of two integers or returns their sum if the integers are equal.
 
-Module Contents:
+Test categories:
+    - Standard cases: Typical comparisons between positive, negative, and mixed integers.
+    - Edge cases: Zero values, equality scenarios, and negatives.
+    - Defensive tests: Invalid inputs and assertion handling.
 
-    - check_greater_less: Compares two integers and returns the smaller or their sum if equal.
+Created on: 2024-12-10
+Author: Jola-Moses
 """
+
 
 import unittest
 
 from ..check_less import check_less
 
 class TestCheckLess(unittest.TestCase):
+    """Tests for check_less function"""
 
     def test_three_five(self):
         """It should evaluate check_less(3, 5) to 3."""
@@ -54,10 +61,10 @@ class TestCheckLess(unittest.TestCase):
             check_less(3.2, 3)
 
     def test_zero_zero(self):
-        """It should raise an assertion error if the both arguments are zero"""
+        """It should raise an assertion error if both arguments are zero"""
         with self.assertRaises(AssertionError):
             check_less(0, 0)
-   
+
 
 if __name__ == "__main__":
     unittest.main()
