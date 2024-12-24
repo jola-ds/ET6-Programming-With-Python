@@ -36,10 +36,11 @@ def sum_two_numbers(a, b) -> int:
     11
     """
 
-    
+
 
     # both arguments must be integers or floats
-    assert isinstance(a, (int, float)) and isinstance(b, (int, float)), "Argument is not an integer or float"
+    assert isinstance(a, (int, float)), "Argument is not an integer or float"
+    assert isinstance(b, (int, float)), "Argument is not an integer or float"
     assert not (a == 0 and b == 0), "Both arguments cannot be zero"
 
     return a + b
