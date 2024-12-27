@@ -30,7 +30,7 @@ def count_between(numbers: list, lower: int, upper: int) -> int:
     Examples:
     >>> count_between([1, 2, 3, 4, 5], 2, 4)
         3
-     >>> count_between([1.5, 2.5, 3.5], 2, 3)
+    >>> count_between([1.5, 2.5, 3.5], 2, 3)
         1
     >>> count_between([], 0, 10)
         0
@@ -38,7 +38,7 @@ def count_between(numbers: list, lower: int, upper: int) -> int:
     assert isinstance(numbers, list), "first argument must be a list"
     assert isinstance(lower, int), "lower bound must be an integer"
     assert isinstance(upper, int), "upper bound must be an integer"
-    
+
     count = 0
     for num in numbers:
         if lower <= num <= upper:
